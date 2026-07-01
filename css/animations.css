@@ -1,0 +1,296 @@
+﻿/* ============================================================
+   HealthWise â€” ANIMATIONS
+   ============================================================ */
+
+/* ---- Keyframes ---- */
+@keyframes loaderPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 8px 32px rgba(122,158,126,0.4); }
+  50% { transform: scale(1.06); box-shadow: 0 12px 40px rgba(122,158,126,0.6); }
+}
+
+@keyframes loaderFill {
+  0% { width: 0; }
+  20% { width: 25%; }
+  50% { width: 60%; }
+  80% { width: 85%; }
+  100% { width: 100%; }
+}
+
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.6); opacity: 0.5; }
+}
+
+@keyframes blobMorph {
+  0%, 100% {
+    border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%;
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    border-radius: 40% 60% 30% 70% / 60% 40% 60% 40%;
+    transform: translate(20px, -20px) scale(1.02);
+  }
+  50% {
+    border-radius: 70% 30% 50% 50% / 30% 70% 30% 70%;
+    transform: translate(-10px, 15px) scale(0.98);
+  }
+  75% {
+    border-radius: 30% 70% 60% 40% / 70% 30% 70% 30%;
+    transform: translate(15px, 10px) scale(1.01);
+  }
+}
+
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  33% { transform: translateY(-12px) rotate(0.5deg); }
+  66% { transform: translateY(-6px) rotate(-0.5deg); }
+}
+
+@keyframes floatCard1 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes particleDrift {
+  0% { transform: translateY(110vh) translateX(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-10vh) translateX(30px); opacity: 0; }
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 0.6; }
+  50% { transform: translateX(-50%) translateY(8px); opacity: 1; }
+}
+
+@keyframes scrollWheel {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
+
+@keyframes runLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes rippleAnim {
+  to { transform: scale(4); opacity: 0; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.88); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-6px); }
+}
+
+@keyframes aiPulse {
+  0%, 100% { box-shadow: 0 4px 14px rgba(122,158,126,0.35); }
+  50% { box-shadow: 0 4px 28px rgba(122,158,126,0.6); }
+}
+
+@keyframes shimmer {
+  from { background-position: -400% 0; }
+  to { background-position: 400% 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+@keyframes svgDraw {
+  from { stroke-dashoffset: 1000; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes gradientBorder {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---- Animated Gradient Border ---- */
+.grad-border {
+  position: relative;
+  background: var(--surface);
+  border-radius: var(--r-xl);
+  z-index: 0;
+}
+
+.grad-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(45deg, var(--brown-600), var(--green-400), var(--brown-300), var(--green-300));
+  background-size: 300% 300%;
+  animation: gradientBorder 5s ease infinite;
+  z-index: -1;
+}
+
+/* ---- Shimmer skeleton ---- */
+.shimmer-skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 25%, var(--surface-3) 50%, var(--surface-2) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+  border-radius: var(--r-sm);
+}
+
+/* ---- Card float on hover ---- */
+.float-hover { transition: transform var(--t-slow), box-shadow var(--t-slow); }
+.float-hover:hover { transform: translateY(-8px); box-shadow: var(--shadow-2xl); }
+
+/* ---- Tilt on hover (placeholder â€” completed via JS) ---- */
+.tilt { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+
+/* ---- Magnetic effect (handled in JS) ---- */
+.magnetic { position: relative; }
+
+/* ---- 3D text (hero) ---- */
+.text-3d {
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.15), 2px 2px 0 rgba(0,0,0,0.1), 3px 3px 0 rgba(0,0,0,0.08);
+}
+
+/* ---- Pulse ring ---- */
+.pulse-ring {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  animation: pulseRing 2s ease-out infinite;
+}
+
+@keyframes pulseRing {
+  0% { transform: scale(0.9); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+/* ---- Neon glow ---- */
+.neon-glow { box-shadow: 0 0 10px rgba(122,158,126,0.3), 0 0 30px rgba(122,158,126,0.15), 0 0 60px rgba(122,158,126,0.08); }
+
+/* ---- Floating icon animation ---- */
+.float-icon {
+  position: absolute;
+  animation: floatCard1 var(--float-dur, 4s) ease-in-out infinite;
+  animation-delay: var(--float-delay, 0s);
+  pointer-events: none;
+  font-size: 1.8rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+/* ---- Page transition ---- */
+.page-transition {
+  position: fixed; inset: 0;
+  background: var(--brown-900);
+  z-index: 9998;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: clip-path 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  pointer-events: none;
+}
+
+.page-transition.out { clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+
+/* ---- Voice animation ---- */
+.voice-waves {
+  display: flex; align-items: center; gap: 3px; height: 24px;
+}
+
+.voice-wave {
+  width: 3px; border-radius: 2px;
+  background: var(--accent);
+  animation: voiceWave 0.8s ease-in-out infinite alternate;
+}
+
+.voice-wave:nth-child(1) { height: 8px; animation-delay: 0s; }
+.voice-wave:nth-child(2) { height: 16px; animation-delay: 0.1s; }
+.voice-wave:nth-child(3) { height: 22px; animation-delay: 0.2s; }
+.voice-wave:nth-child(4) { height: 16px; animation-delay: 0.3s; }
+.voice-wave:nth-child(5) { height: 8px; animation-delay: 0.4s; }
+
+@keyframes voiceWave {
+  from { height: 4px; }
+  to { height: 100%; }
+}
+
+/* ---- Health category color themes ---- */
+.cat-hygiene   { --cat-color: linear-gradient(135deg, #1565C0, #1976D2); --cat-bg: rgba(21,101,192,0.08); }
+.cat-eating    { --cat-color: linear-gradient(135deg, #2E7D32, #388E3C); --cat-bg: rgba(46,125,50,0.08); }
+.cat-water     { --cat-color: linear-gradient(135deg, #0277BD, #0288D1); --cat-bg: rgba(2,119,189,0.08); }
+.cat-exercise  { --cat-color: linear-gradient(135deg, #E65100, #F4511E); --cat-bg: rgba(230,81,0,0.08); }
+.cat-mental    { --cat-color: linear-gradient(135deg, #6A1B9A, #7B1FA2); --cat-bg: rgba(106,27,154,0.08); }
+.cat-sleep     { --cat-color: linear-gradient(135deg, #283593, #303F9F); --cat-bg: rgba(40,53,147,0.08); }
+.cat-vaccine   { --cat-color: linear-gradient(135deg, #BF360C, #D84315); --cat-bg: rgba(191,54,12,0.08); }
+.cat-environ   { --cat-color: linear-gradient(135deg, #1B5E20, #2E7D32); --cat-bg: rgba(27,94,32,0.08); }
+.cat-lifestyle { --cat-color: linear-gradient(135deg, #880E4F, #AD1457); --cat-bg: rgba(136,14,79,0.08); }
+
+/* ---- Progress bar ---- */
+.prog-bar {
+  height: 6px; border-radius: var(--r-full);
+  background: var(--border-strong); overflow: hidden;
+}
+
+.prog-fill {
+  height: 100%; border-radius: var(--r-full);
+  background: var(--g-accent);
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 0;
+}
+
+/* ---- Reading progress ---- */
+.reading-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: var(--fs-2xs); font-weight: 600;
+  color: var(--text-muted); letter-spacing: var(--ls-wide);
+}
+
+/* ---- Stagger children ---- */
+.stagger-children > * {
+  opacity: 0; transform: translateY(20px);
+  animation: slideInUp 0.5s ease forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0.0s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.4s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.5s; }
+.stagger-children > *:nth-child(7) { animation-delay: 0.6s; }
+.stagger-children > *:nth-child(8) { animation-delay: 0.7s; }
+.stagger-children > *:nth-child(9) { animation-delay: 0.8s; }
+
+

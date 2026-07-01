@@ -1,0 +1,1028 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+ <meta charset="UTF-8"/>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <meta name="description" content="HealthWise Your premium health education platform. Learn how to eat well, sleep better, move more, and live a healthier, happier life."/>
+ <meta name="keywords" content="health education, healthy lifestyle, hygiene tips, mental wellness, nutrition, exercise, vaccination"/>
+ <meta property="og:title" content="HealthWise Healthy Habits Begin With You"/>
+ <meta property="og:description" content="Your personal health education platform. Discover health tips, wellness guides, and AI-powered health assistance."/>
+ <meta property="og:type" content="website"/>
+ <title>HealthWise Healthy Habits Begin With You</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com"/>
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+ <link rel="stylesheet" href="css/style.css"/>
+ <link rel="stylesheet" href="css/animations.css"/>
+ <link rel="stylesheet" href="css/responsive.css"/>
+
+ <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234E7A52'/><text y='.8em' font-size='42' x='16' fill='white'>HS</text></svg>"/>
+
+ <style>
+ /* SVG gradient defs for ring */
+ .ring-svg-defs { position: absolute; width: 0; height: 0; }
+ </style>
+</head>
+<body>
+
+<!-- SVG Gradient Defs -->
+<svg class="ring-svg-defs" aria-hidden="true">
+ <defs>
+ <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+ <stop offset="0%" stop-color="#7A9E7E"/>
+ <stop offset="100%" stop-color="#4E7A52"/>
+ </linearGradient>
+ </defs>
+</svg>
+
+<!-- =========================================================
+ PAGE LOADER
+ ========================================================= -->
+<div id="loader" role="status" aria-label="Loading HealthWise">
+ <div class="loader-brand">
+ <div class="loader-icon">HS</div>
+ <div>
+ <div class="loader-name">HealthWise</div>
+ <div class="loader-tagline">Healthy Habits Begin With You</div>
+ </div>
+ </div>
+ <div class="loader-progress">
+ <div class="loader-progress-fill"></div>
+ </div>
+ <div class="loader-status">Preparing your health journey</div>
+</div>
+
+<!-- Scroll Progress Bar -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- =========================================================
+ NAVBAR
+ ========================================================= -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+ <div class="nav-inner">
+ <a href="index.html" class="nav-logo" aria-label="HealthWise Home">
+ <div class="nav-logo-mark" aria-hidden="true">HS</div>
+ <div class="nav-logo-copy">
+ <span class="nav-logo-name">HealthWise</span>
+ <span class="nav-logo-tag">Healthy Habits Begin With You</span>
+ </div>
+ </a>
+
+ <ul class="nav-links" role="list">
+ <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+ <li><a href="about.html" class="nav-link">Why Health</a></li>
+ <li><a href="health.html" class="nav-link">Health Guide</a></li>
+ <li><a href="assistant.html" class="nav-link">AI Assistant</a></li>
+ </ul>
+
+ <div class="nav-actions">
+ <button class="nav-icon-btn" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark/light mode">
+ 
+ </button>
+ <a href="assistant.html" class="nav-cta-btn magnetic btn-magnetic" aria-label="Open AI Assistant">
+ AI Assistant
+ </a>
+ <button class="nav-ham" id="nav-ham" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+ </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="nav-drawer" id="nav-drawer" role="dialog" aria-label="Navigation menu">
+ <div class="drawer-links">
+ <a href="index.html" class="drawer-link" aria-current="page"> Home</a>
+ <a href="about.html" class="drawer-link"> Why Health</a>
+ <a href="health.html" class="drawer-link"> Health Guide</a>
+ <a href="assistant.html" class="drawer-link"> AI Assistant</a>
+ </div>
+ <a href="assistant.html" class="btn btn-solid" style="display:flex;align-items:center;gap:8px;justify-content:center;">
+ Chat with AI Health Assistant
+ </a>
+</div>
+
+<!-- =========================================================
+ HERO SECTION
+ ========================================================= -->
+<section id="hero" aria-label="Hero Healthy Habits Begin With You">
+ <!-- Blobs -->
+ <div class="blob blob-1" aria-hidden="true"></div>
+ <div class="blob blob-2" aria-hidden="true"></div>
+ <div class="blob blob-3" aria-hidden="true"></div>
+
+ <!-- Grid overlay -->
+ <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+ <!-- Particles -->
+ <div class="hero-particles" aria-hidden="true"></div>
+
+ <div class="hero-inner">
+ <!-- Content -->
+ <div class="hero-content">
+ <div class="hero-label">
+ <span class="hero-label-pulse" aria-hidden="true"></span>
+ Your Personal Healthy Habits Begin With You
+ </div>
+
+ <h1 class="hero-title text-3d">
+ Healthy Habits<br>
+ <span class="hero-accent">Begin With You</span>
+ </h1>
+
+ <p class="hero-subtitle">
+ Discover evidence-based health guidance on nutrition, hygiene, fitness, and mental wellness powered by WHO guidelines and an intelligent AI health assistant.
+ </p>
+
+ <div class="hero-actions">
+ <a href="health.html" class="btn btn-accent magnetic" aria-label="Explore complete health guide">
+ Explore Health Guide
+ </a>
+ <a href="assistant.html" class="btn btn-glass magnetic" aria-label="Chat with AI assistant">
+ Talk to AI
+ </a>
+ </div>
+
+ <div class="hero-stats" role="list" aria-label="Platform highlights">
+ <div class="hero-stat-item" role="listitem">
+ <span class="hero-stat-number">24+</span>
+ <span class="hero-stat-label">Health Topics</span>
+ </div>
+ <div class="hero-stat-divider" aria-hidden="true"></div>
+ <div class="hero-stat-item" role="listitem">
+ <span class="hero-stat-number">500+</span>
+ <span class="hero-stat-label">Health Tips</span>
+ </div>
+ <div class="hero-stat-divider" aria-hidden="true"></div>
+ <div class="hero-stat-item" role="listitem">
+ <span class="hero-stat-number">WHO</span>
+ <span class="hero-stat-label">Guidelines</span>
+ </div>
+ </div>
+ </div>
+
+ <!-- Visual Card -->
+ <div class="hero-visual" aria-hidden="true">
+ <!-- Floating mini cards -->
+ <div class="float-card float-card-1">
+ <div class="fc-icon"></div>
+ <div>
+ <div class="fc-label">Hydration</div>
+ <div class="fc-sub">Drink 3L daily</div>
+ </div>
+ </div>
+
+ <div class="float-card float-card-2">
+ <div class="fc-icon"></div>
+ <div>
+ <div class="fc-label">Active</div>
+ <div class="fc-sub">150 min/week</div>
+ </div>
+ </div>
+
+ <div class="float-card float-card-3">
+ <div class="fc-icon"></div>
+ <div>
+ <div class="fc-label">Sleep</div>
+ <div class="fc-sub">8 hours/night</div>
+ </div>
+ </div>
+
+ <!-- Main card -->
+ <div class="hero-main-card hero-card-stack tilt" data-tilt="8">
+ <div class="hero-card-header">
+ <div class="hc-avatar"></div>
+ <div>
+ <div class="hc-title">Daily Health Score</div>
+ <div class="hc-sub">Your wellness overview</div>
+ </div>
+ </div>
+
+ <div class="hc-metrics">
+ <div class="hc-metric">
+ <div class="hc-metric-value">82%</div>
+ <div class="hc-metric-label">Hygiene</div>
+ </div>
+ <div class="hc-metric">
+ <div class="hc-metric-value">74%</div>
+ <div class="hc-metric-label">Nutrition</div>
+ </div>
+ <div class="hc-metric">
+ <div class="hc-metric-value">65%</div>
+ <div class="hc-metric-label">Fitness</div>
+ </div>
+ <div class="hc-metric">
+ <div class="hc-metric-value">71%</div>
+ <div class="hc-metric-label">Wellness</div>
+ </div>
+ </div>
+
+ <!-- Pulse line -->
+ <div class="hc-pulse-line">
+ <svg aria-label="Health pulse visualization"></svg>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- Scroll Cue -->
+ <div class="scroll-cue" role="button" tabindex="0" aria-label="Scroll down to explore">
+ <div class="scroll-mouse">
+ <div class="scroll-wheel"></div>
+ </div>
+ <span>Scroll to explore</span>
+ </div>
+</section>
+
+<!-- =========================================================
+ HEALTH CATEGORIES
+ ========================================================= -->
+<section id="categories" aria-labelledby="cat-heading">
+ <div class="container">
+ <div class="section-head">
+ <div class="badge reveal">
+ <span class="badge-dot" aria-hidden="true"></span>
+ Health Categories
+ </div>
+ <h2 class="display-2 reveal delay-1" id="cat-heading">
+ Explore Every <span class="gradient-text">Health Topic</span>
+ </h2>
+ <p class="section-desc reveal delay-2">
+ Tap any category to dive into detailed, evidence-based health guides curated from WHO and global health authorities.
+ </p>
+ </div>
+
+ <div class="cat-grid" role="list">
+ <div class="cat-card cat-hygiene tilt reveal" data-cat="hygiene" data-href="health.html#hygiene" role="listitem" tabindex="0" aria-label="Personal Hygiene">
+ <div class="cat-icon"></div>
+ <div class="cat-name">Personal Hygiene</div>
+ <div class="cat-desc">Hand washing, oral care, skin & hair</div>
+ </div>
+ <div class="cat-card cat-eating tilt reveal delay-1" data-cat="nutrition" data-href="health.html#nutrition" role="listitem" tabindex="0" aria-label="Healthy Eating">
+ <div class="cat-icon"></div>
+ <div class="cat-name">Healthy Eating</div>
+ <div class="cat-desc">Balanced diet, nutrition & superfoods</div>
+ </div>
+ <div class="cat-card cat-water tilt reveal delay-2" data-cat="water" data-href="health.html#water" role="listitem" tabindex="0" aria-label="Water Safety">
+ <div class="cat-icon"></div>
+ <div class="cat-name">Water Safety</div>
+ <div class="cat-desc">Hydration, purification, safe drinking</div>
+ </div>
+ <div class="cat-card cat-exercise tilt reveal delay-3" data-cat="exercise" data-href="health.html#exercise" role="listitem" tabindex="0" aria-label="Exercise & Fitness">
+ <div class="cat-icon"></div>
+ <div class="cat-name">Exercise</div>
+ <div class="cat-desc">Fitness, yoga & physical activity</div>
+ </div>
+ <div class="cat-card cat-mental tilt reveal delay-4" data-cat="mental" data-href="health.html#mental" role="listitem" tabindex="0" aria-label="Mental Health">
+ <div class="cat-icon"></div>
+ <div class="cat-name">Mental Health</div>
+ <div class="cat-desc">Stress, meditation & emotional wellness</div>
+ </div>
+ <div class="cat-card cat-sleep tilt reveal delay-5" data-cat="sleep" data-href="health.html#sleep" role="listitem" tabindex="0" aria-label="Sleep Health">
+ <div class="cat-icon"></div>
+ <div class="cat-name">Sleep</div>
+ <div class="cat-desc">Sleep hygiene, insomnia & better rest</div>
+ </div>
+ <div class="cat-card cat-vaccine tilt reveal delay-6" data-cat="vaccine" data-href="health.html#vaccine" role="listitem" tabindex="0" aria-label="Vaccination">
+ <div class="cat-icon"></div>
+ <div class="cat-name">Vaccination</div>
+ <div class="cat-desc">Immunization schedules & facts</div>
+ </div>
+ <div class="cat-card cat-environ tilt reveal delay-7" data-cat="environment" data-href="health.html#environment" role="listitem" tabindex="0" aria-label="Clean Environment">
+ <div class="cat-icon"></div>
+ <div class="cat-name">Clean Environment</div>
+ <div class="cat-desc">Sanitation, waste & pollution</div>
+ </div>
+ <div class="cat-card cat-lifestyle tilt reveal delay-8" data-cat="lifestyle" data-href="health.html#lifestyle" role="listitem" tabindex="0" aria-label="Healthy Lifestyle">
+ <div class="cat-icon"></div>
+ <div class="cat-name">Healthy Lifestyle</div>
+ <div class="cat-desc">Daily habits & holistic wellness</div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- =========================================================
+ DAILY ROUTINE
+ ========================================================= -->
+<section id="routine" aria-labelledby="routine-heading">
+ <div class="container">
+ <div class="section-head">
+ <div class="badge reveal">
+ <span class="badge-dot" aria-hidden="true"></span>
+ Daily Blueprint
+ </div>
+ <h2 class="display-2 reveal delay-1" id="routine-heading">
+ Your Ideal <span class="gradient-text">Daily Routine</span>
+ </h2>
+ <p class="section-desc reveal delay-2">
+ A science-backed daily schedule that balances nutrition, movement, mental health, and rest for maximum wellbeing.
+ </p>
+ </div>
+
+ <!-- Tabs -->
+ <div class="routine-tabs" role="tablist" aria-label="Select time of day">
+ <button class="rtab active" data-tab="tab-morning" role="tab" aria-selected="true" aria-controls="tab-morning">
+ <span class="rtab-emoji"></span> Morning
+ </button>
+ <button class="rtab" data-tab="tab-afternoon" role="tab" aria-selected="false" aria-controls="tab-afternoon">
+ <span class="rtab-emoji"></span> Afternoon
+ </button>
+ <button class="rtab" data-tab="tab-evening" role="tab" aria-selected="false" aria-controls="tab-evening">
+ <span class="rtab-emoji"></span> Evening
+ </button>
+ <button class="rtab" data-tab="tab-night" role="tab" aria-selected="false" aria-controls="tab-night">
+ <span class="rtab-emoji"></span> Night
+ </button>
+ </div>
+
+ <!-- Morning Panel -->
+ <div class="routine-panel active" id="tab-morning" role="tabpanel">
+ <div class="routine-items">
+ <div class="routine-item">
+ <span class="ri-time">6:00 AM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Wake Up</div>
+ <div class="ri-desc">Rise at a consistent time even weekends. Your circadian rhythm loves routine.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">6:05 AM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Drink Warm Water</div>
+ <div class="ri-desc">12 glasses of warm water kick-starts metabolism and flushes toxins.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">6:15 AM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Brush Teeth</div>
+ <div class="ri-desc">2 minutes with fluoride toothpaste. Don't forget your tongue!</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">6:30 AM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Exercise / Yoga</div>
+ <div class="ri-desc">30 minutes of movement walk, yoga, or home workout. Best time for cortisol alignment.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">7:30 AM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Nutritious Breakfast</div>
+ <div class="ri-desc">Protein + complex carbs + fruit. Never skip boosts metabolism by 25%.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- Afternoon Panel -->
+ <div class="routine-panel" id="tab-afternoon" role="tabpanel">
+ <div class="routine-items">
+ <div class="routine-item">
+ <span class="ri-time">12:30 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Wash Hands Before Lunch</div>
+ <div class="ri-desc">Always wash hands for 20 seconds with soap before eating.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">12:45 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Balanced Lunch</div>
+ <div class="ri-desc">Dal, vegetables, whole grain roti, and salad. Half your plate = veggies.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">1:30 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Post-Lunch Walk</div>
+ <div class="ri-desc">10-minute walk after meals improves blood sugar and digestion significantly.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">3:00 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Mindfulness Break</div>
+ <div class="ri-desc">5-minute deep breathing. Box breathing: 4-4-4-4 reduces afternoon stress.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">4:00 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Healthy Snack</div>
+ <div class="ri-desc">Fruit, nuts, or sprouts. Avoid packaged snacks high in sugar and salt.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- Evening Panel -->
+ <div class="routine-panel" id="tab-evening" role="tabpanel">
+ <div class="routine-items">
+ <div class="routine-item">
+ <span class="ri-time">5:30 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Outdoor Walk</div>
+ <div class="ri-desc">30 minutes in nature reduces cortisol and boosts serotonin. Take family or friends!</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">7:00 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Family Time</div>
+ <div class="ri-desc">Social connection is a key longevity factor. Meaningful conversations matter.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">7:30 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Light Dinner</div>
+ <div class="ri-desc">Dinner should be your lightest meal. Avoid heavy, fried food after sunset.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">8:30 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Reading / Learning</div>
+ <div class="ri-desc">30 minutes of non-screen reading improves focus and winds down your brain for sleep.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- Night Panel -->
+ <div class="routine-panel" id="tab-night" role="tabpanel">
+ <div class="routine-items">
+ <div class="routine-item">
+ <span class="ri-time">9:00 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Phone Away</div>
+ <div class="ri-desc">Blue light from screens suppresses melatonin. Screens off 1 hour before sleep.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">9:30 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Brush Teeth + Skin Care</div>
+ <div class="ri-desc">Night is when skin repairs. Cleanse and moisturize. Oil pulling optional.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">9:45 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Gratitude Journal</div>
+ <div class="ri-desc">Write 3 things you're grateful for. Clinically proven to improve happiness.</div>
+ </div>
+ </div>
+ <div class="routine-item">
+ <span class="ri-time">10:00 PM</span>
+ <div class="ri-icon"></div>
+ <div class="ri-text">
+ <div class="ri-title">Sleep</div>
+ <div class="ri-desc">7-9 hours of quality sleep. Your brain clears toxins, repairs tissue, consolidates memory.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- =========================================================
+ HEALTH TIPS RUNNER
+ ========================================================= -->
+<section id="tips" aria-labelledby="tips-heading">
+ <div class="container">
+ <div class="section-head">
+ <div class="badge reveal">
+ <span class="badge-dot" aria-hidden="true"></span>
+ Daily Health Tips
+ </div>
+ <h2 class="display-2 reveal delay-1" id="tips-heading">Quick <span class="gradient-text">Wellness Tips</span></h2>
+ </div>
+ </div>
+
+ <!-- Infinite Runner -->
+ <div style="position:relative;overflow:hidden;padding:var(--s-4) 0;" aria-label="Scrolling health tips">
+ <div class="tips-runner">
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Drink 3 litres of water daily</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Walk 10,000 steps every day</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Sleep 79 hours every night</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Eat 5 servings of vegetables daily</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Wash hands for 20 seconds with soap</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Meditate for 10 minutes daily</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Get 15 min of morning sunlight</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Never smoke or use tobacco</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Connect with loved ones daily</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Cook food at home more often</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Take vaccines on schedule</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> No screens 1 hour before bed</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Brush teeth twice, floss once daily</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Add turmeric to your diet daily</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Strength train 2x per week</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Check blood pressure annually</div>
+ <!-- Duplicate for loop -->
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Drink 3 litres of water daily</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Walk 10,000 steps every day</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Sleep 79 hours every night</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Eat 5 servings of vegetables daily</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Wash hands for 20 seconds with soap</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Meditate for 10 minutes daily</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Get 15 min of morning sunlight</div>
+ <div class="tip-pill"><span class="tip-pill-icon"></span> Never smoke or use tobacco</div>
+ </div>
+ </div>
+</section>
+
+<!-- =========================================================
+ HABIT TRACKER
+ ========================================================= -->
+<section id="habits" aria-labelledby="habits-heading">
+ <div class="container">
+ <div class="section-head">
+ <div class="badge reveal">
+ <span class="badge-dot" aria-hidden="true"></span>
+ Daily Challenge
+ </div>
+ <h2 class="display-2 reveal delay-1" id="habits-heading">
+ Healthy Habits <span class="gradient-text">Tracker</span>
+ </h2>
+ <p class="section-desc reveal delay-2">
+ Check off each healthy habit you've completed today. Build your streak and watch your progress grow!
+ </p>
+ </div>
+
+ <div class="habits-inner">
+ <!-- Habit List -->
+ <div class="habit-list" role="list" aria-label="Daily healthy habits checklist">
+ <div class="habit-item tilt" role="listitem" tabindex="0" aria-label="Exercised 30 minutes click to mark done">
+ <div class="habit-cb"><span class="habit-check" aria-hidden="true"></span></div>
+ <span class="habit-label"> Exercised for 30+ minutes</span>
+ <span class="habit-point">+10</span>
+ </div>
+ <div class="habit-item tilt" role="listitem" tabindex="0">
+ <div class="habit-cb"><span class="habit-check" aria-hidden="true"></span></div>
+ <span class="habit-label"> Drank 8+ glasses of water</span>
+ <span class="habit-point">+10</span>
+ </div>
+ <div class="habit-item tilt" role="listitem" tabindex="0">
+ <div class="habit-cb"><span class="habit-check" aria-hidden="true"></span></div>
+ <span class="habit-label"> Ate fruits & vegetables</span>
+ <span class="habit-point">+10</span>
+ </div>
+ <div class="habit-item tilt" role="listitem" tabindex="0">
+ <div class="habit-cb"><span class="habit-check" aria-hidden="true"></span></div>
+ <span class="habit-label"> Brushed teeth twice today</span>
+ <span class="habit-point">+10</span>
+ </div>
+ <div class="habit-item tilt" role="listitem" tabindex="0">
+ <div class="habit-cb"><span class="habit-check" aria-hidden="true"></span></div>
+ <span class="habit-label"> Washed hands before meals</span>
+ <span class="habit-point">+10</span>
+ </div>
+ <div class="habit-item tilt" role="listitem" tabindex="0">
+ <div class="habit-cb"><span class="habit-check" aria-hidden="true"></span></div>
+ <span class="habit-label"> Practiced mindfulness / yoga</span>
+ <span class="habit-point">+10</span>
+ </div>
+ <div class="habit-item tilt" role="listitem" tabindex="0">
+ <div class="habit-cb"><span class="habit-check" aria-hidden="true"></span></div>
+ <span class="habit-label"> Slept 79 hours last night</span>
+ <span class="habit-point">+10</span>
+ </div>
+ <div class="habit-item tilt" role="listitem" tabindex="0">
+ <div class="habit-cb"><span class="habit-check" aria-hidden="true"></span></div>
+ <span class="habit-label"> Kept screen time under 2 hours</span>
+ <span class="habit-point">+10</span>
+ </div>
+ <div class="habit-item tilt" role="listitem" tabindex="0">
+ <div class="habit-cb"><span class="habit-check" aria-hidden="true"></span></div>
+ <span class="habit-label"> Got morning sunlight (15 min)</span>
+ <span class="habit-point">+10</span>
+ </div>
+ <div class="habit-item tilt" role="listitem" tabindex="0">
+ <div class="habit-cb"><span class="habit-check" aria-hidden="true"></span></div>
+ <span class="habit-label"> Spent quality time with family</span>
+ <span class="habit-point">+10</span>
+ </div>
+ </div>
+
+ <!-- Progress Ring -->
+ <div class="progress-ring-wrap">
+ <div class="ring-relative">
+ <svg class="progress-ring-svg" viewBox="0 0 140 140" aria-label="Habit completion progress">
+ <circle class="progress-ring-track" cx="70" cy="70" r="62"/>
+ <circle class="progress-ring-fill" cx="70" cy="70" r="62"/>
+ </svg>
+ <div class="ring-center">
+ <div class="ring-percent" aria-live="polite">0%</div>
+ <div class="ring-label">Daily Progress</div>
+ </div>
+ </div>
+
+ <div style="text-align:center;">
+ <div style="font-family:var(--font-display);font-size:var(--fs-xl);font-weight:700;color:var(--text-primary);margin-bottom:var(--s-2);">
+ Keep Going! 
+ </div>
+ <div style="font-size:var(--fs-sm);color:var(--text-muted);margin-bottom:var(--s-6);">
+ Every healthy habit counts toward your wellbeing.
+ </div>
+ <a href="health.html" class="btn btn-accent" style="font-size:var(--fs-sm);">
+ Learn More Health Tips
+ </a>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- =========================================================
+ myths VS FACTS
+ ========================================================= -->
+<section id="myths" aria-labelledby="myths-heading">
+ <div class="container">
+ <div class="section-head">
+ <div class="badge reveal">
+ <span class="badge-dot" aria-hidden="true"></span>
+ Myth Busting
+ </div>
+ <h2 class="display-2 reveal delay-1" id="myths-heading">
+ myths vs <span class="gradient-text">Facts</span>
+ </h2>
+ <p class="section-desc reveal delay-2">
+ Flip each card to reveal the truth behind common health myths. Knowledge is your best medicine!
+ </p>
+ </div>
+
+ <div class="myths-grid">
+ <div class="flip-card reveal" role="article" tabindex="0" aria-label="Myth: Cold weather causes flu">
+ <div class="flip-card-inner">
+ <div class="flip-front">
+ <div class="flip-tag"> Myth</div>
+ <p class="flip-text">"Cold weather and getting wet in rain causes cold and flu."</p>
+ <div class="flip-hint">Click to see the fact </div>
+ </div>
+ <div class="flip-back">
+ <div class="flip-tag"> Fact</div>
+ <p class="flip-text">Viruses cause cold and flu not cold temperatures. You can catch flu in summer too. Viruses spread person-to-person, not through weather.</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="flip-card reveal delay-1" role="article" tabindex="0" aria-label="Myth: Vaccines cause autism">
+ <div class="flip-card-inner">
+ <div class="flip-front">
+ <div class="flip-tag"> Myth</div>
+ <p class="flip-text">"Vaccines cause autism and are dangerous for children."</p>
+ <div class="flip-hint">Click to see the fact </div>
+ </div>
+ <div class="flip-back">
+ <div class="flip-tag"> Fact</div>
+ <p class="flip-text">No scientific evidence supports this. The original claim was from a fraudulent, retracted study. WHO, CDC, and 1.2M+ child studies confirm vaccines are safe.</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="flip-card reveal delay-2" role="article" tabindex="0" aria-label="Myth: Eating less is best for weight loss">
+ <div class="flip-card-inner">
+ <div class="flip-front">
+ <div class="flip-tag"> Myth</div>
+ <p class="flip-text">"Eating as little as possible is the fastest way to lose weight."</p>
+ <div class="flip-hint">Click to see the fact </div>
+ </div>
+ <div class="flip-back">
+ <div class="flip-tag"> Fact</div>
+ <p class="flip-text">Severe caloric restriction slows metabolism, causes muscle loss, and leads to nutrient deficiencies. A modest deficit + exercise + balanced diet is the right approach.</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="flip-card reveal delay-3" role="article" tabindex="0" aria-label="Myth: Mental illness is weakness">
+ <div class="flip-card-inner">
+ <div class="flip-front">
+ <div class="flip-tag"> Myth</div>
+ <p class="flip-text">"Mental illness is a personal weakness or character flaw."</p>
+ <div class="flip-hint">Click to see the fact </div>
+ </div>
+ <div class="flip-back">
+ <div class="flip-tag"> Fact</div>
+ <p class="flip-text">Mental illness is a medical condition with biological, genetic, and environmental causes just like diabetes or asthma. Seeking help is a sign of strength.</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="flip-card reveal delay-4" role="article" tabindex="0" aria-label="Myth: Antibiotics cure flu">
+ <div class="flip-card-inner">
+ <div class="flip-front">
+ <div class="flip-tag"> Myth</div>
+ <p class="flip-text">"Antibiotics are effective for treating cold, flu, and viral fevers."</p>
+ <div class="flip-hint">Click to see the fact </div>
+ </div>
+ <div class="flip-back">
+ <div class="flip-tag"> Fact</div>
+ <p class="flip-text">Antibiotics only kill bacteria, NOT viruses. Misusing them creates drug-resistant superbugs one of WHO's top global health threats. Never self-medicate with antibiotics.</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="flip-card reveal delay-5" role="article" tabindex="0" aria-label="Myth: You need 8 glasses of water exactly">
+ <div class="flip-card-inner">
+ <div class="flip-front">
+ <div class="flip-tag"> Myth</div>
+ <p class="flip-text">"Everyone needs exactly 8 glasses of water per day no more, no less."</p>
+ <div class="flip-hint">Click to see the fact </div>
+ </div>
+ <div class="flip-back">
+ <div class="flip-tag"> Fact</div>
+ <p class="flip-text">Water needs vary by age, weight, activity, and climate. The best indicator is urine color pale yellow means good hydration. Adults generally need 2.53.5L daily.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- =========================================================
+ EMERGENCY CONTACTS
+ ========================================================= -->
+<section id="emergency" aria-labelledby="emergency-heading">
+ <div class="container">
+ <div class="section-head" style="color:white;">
+ <div class="badge reveal" style="background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.9);border-color:rgba(255,255,255,0.2);">
+ <span class="badge-dot" style="background:rgba(255,255,255,0.7);" aria-hidden="true"></span>
+ Save These Numbers
+ </div>
+ <h2 class="display-2 reveal delay-1" style="color:white;" id="emergency-heading">
+ Emergency <span style="color:var(--green-300);">Contacts</span>
+ </h2>
+ <p class="section-desc reveal delay-2" style="color:rgba(255,255,255,0.65);">
+ Keep these numbers saved in your phone. In emergencies, every second counts.
+ </p>
+ </div>
+
+ <div class="emergency-grid">
+ <div class="em-card reveal" role="article" aria-label="Ambulance 108">
+ <div class="em-icon"></div>
+ <div class="em-name">Ambulance</div>
+ <div class="em-number">108</div>
+ <div class="em-desc">Medical emergencies</div>
+ </div>
+ <div class="em-card reveal delay-1" role="article" aria-label="Emergency 112">
+ <div class="em-icon"></div>
+ <div class="em-name">Emergency</div>
+ <div class="em-number">112</div>
+ <div class="em-desc">All emergencies</div>
+ </div>
+ <div class="em-card reveal delay-2" role="article" aria-label="Ambulance 102">
+ <div class="em-icon"></div>
+ <div class="em-name">Hospital</div>
+ <div class="em-number">102</div>
+ <div class="em-desc">Government hospital services</div>
+ </div>
+ <div class="em-card reveal delay-3" role="article" aria-label="Mental Health iCall">
+ <div class="em-icon"></div>
+ <div class="em-name">Mental Health</div>
+ <div class="em-number" style="font-size:var(--fs-xl);">9152987821</div>
+ <div class="em-desc">iCall free counseling</div>
+ </div>
+ <div class="em-card reveal delay-4" role="article" aria-label="Poison Control helpline">
+ <div class="em-icon"></div>
+ <div class="em-name">Poison Control</div>
+ <div class="em-number" style="font-size:var(--fs-xl);">1800-11-6117</div>
+ <div class="em-desc">Accidental poisoning</div>
+ </div>
+ <div class="em-card reveal delay-5" role="article" aria-label="Vandrevala Foundation">
+ <div class="em-icon"></div>
+ <div class="em-name">Crisis Helpline</div>
+ <div class="em-number" style="font-size:var(--fs-xl);">1860-2662-345</div>
+ <div class="em-desc">Vandrevala Foundation</div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- =========================================================
+ HEALTH QUOTE
+ ========================================================= -->
+<section id="quote" aria-labelledby="quote-text">
+ <div class="container-sm" style="position:relative;z-index:1;">
+ <blockquote>
+ <p class="quote-text reveal" id="quote-text">
+ "Take care of your body. It's the only place you have to live."
+ </p>
+ <footer class="quote-author reveal delay-1"> Jim Rohn</footer>
+ </blockquote>
+ <div style="display:flex;justify-content:center;margin-top:var(--s-8);" class="reveal delay-2">
+ <a href="health.html" class="btn btn-glass magnetic" aria-label="Start your health journey">
+ Start Your Health Journey 
+ </a>
+ </div>
+ </div>
+</section>
+
+<!-- =========================================================
+ FAQ
+ ========================================================= -->
+<section id="faq" aria-labelledby="faq-heading">
+ <div class="container">
+ <div class="section-head">
+ <div class="badge reveal">
+ <span class="badge-dot" aria-hidden="true"></span>
+ Common Questions
+ </div>
+ <h2 class="display-2 reveal delay-1" id="faq-heading">
+ Frequently Asked <span class="gradient-text">Questions</span>
+ </h2>
+ </div>
+
+ <div class="faq-list">
+ <div class="faq-item">
+ <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+ <span class="faq-q-text">How much water should I drink every day?</span>
+ <div class="faq-toggle" aria-hidden="true">+</div>
+ </div>
+ <div class="faq-body" role="region">
+ <div class="faq-body-inner">Adults generally need 2.53.5 litres (812 glasses) of water per day. However, needs vary by activity level, climate, and body weight. The best indicator is urine color pale yellow means you're well hydrated. Drink more during exercise, hot weather, or illness. Start with a glass of warm water first thing in the morning for maximum benefit.</div>
+ </div>
+ </div>
+
+ <div class="faq-item">
+ <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+ <span class="faq-q-text">What is the right way to wash hands?</span>
+ <div class="faq-toggle" aria-hidden="true">+</div>
+ </div>
+ <div class="faq-body" role="region">
+ <div class="faq-body-inner">WHO recommends 6 steps: (1) Wet hands with clean water, (2) Apply soap to cover all surfaces, (3) Rub palms together, (4) Rub back of each hand, (5) Interlace fingers to clean between, (6) Rinse under running water and dry with clean towel. Total time should be minimum 20 seconds about the time to hum "Happy Birthday" twice.</div>
+ </div>
+ </div>
+
+ <div class="faq-item">
+ <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+ <span class="faq-q-text">How much sleep do I actually need?</span>
+ <div class="faq-toggle" aria-hidden="true">+</div>
+ </div>
+ <div class="faq-body" role="region">
+ <div class="faq-body-inner">According to the National Sleep Foundation: adults need 79 hours, teenagers 810 hours, children 612 years need 912 hours. Consistency matters as much as duration sleeping at the same time every day (including weekends) optimizes your circadian rhythm. Sleep deprivation equivalent to drunk driving after just 1719 hours awake.</div>
+ </div>
+ </div>
+
+ <div class="faq-item">
+ <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+ <span class="faq-q-text">How often should I exercise, and what type?</span>
+ <div class="faq-toggle" aria-hidden="true">+</div>
+ </div>
+ <div class="faq-body" role="region">
+ <div class="faq-body-inner">WHO recommends at least 150300 minutes of moderate aerobic activity per week (like brisk walking, cycling) or 75150 minutes of vigorous activity. Add muscle-strengthening exercises 2 days/week. Even short 10-minute sessions count! If you're sedentary, start with 10-minute walks and gradually increase. Any movement is better than none.</div>
+ </div>
+ </div>
+
+ <div class="faq-item">
+ <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+ <span class="faq-q-text">What foods should I eat for better immunity?</span>
+ <div class="faq-toggle" aria-hidden="true">+</div>
+ </div>
+ <div class="faq-body" role="region">
+ <div class="faq-body-inner">Key immunity-boosting foods include: Vitamin C rich foods (amla, lemon, bell peppers), Zinc-rich foods (pumpkin seeds, chickpeas), Garlic and ginger (antimicrobial), Turmeric (anti-inflammatory), Vitamin D sources (fatty fish, egg yolks, sunlight), fermented foods (curd, idli) for gut health, and colorful vegetables for antioxidants. Remember: no single food boosts immunity it's the overall diet pattern that matters.</div>
+ </div>
+ </div>
+
+ <div class="faq-item">
+ <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+ <span class="faq-q-text">How do I manage stress and anxiety naturally?</span>
+ <div class="faq-toggle" aria-hidden="true">+</div>
+ </div>
+ <div class="faq-body" role="region">
+ <div class="faq-body-inner">Evidence-based natural approaches include: Regular exercise (as effective as medication for mild depression), Mindfulness meditation (10 min daily reduces anxiety by 30%), Deep breathing exercises (4-7-8 technique), Quality sleep, Social connection, Time in nature (proven cortisol reducer), Journaling, Limiting news and social media, and Eating a balanced diet. If symptoms are severe or persistent, please consult a mental health professional it's a sign of strength, not weakness.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- =========================================================
+ AI CTA
+ ========================================================= -->
+<section style="padding:var(--s-20) 0;background:var(--surface-2);" aria-labelledby="ai-cta-heading">
+ <div class="container">
+ <div style="background:var(--g-hero);border-radius:var(--r-3xl);padding:var(--s-16) var(--s-12);text-align:center;position:relative;overflow:hidden;" class="reveal tilt">
+ <div class="blob" style="width:300px;height:300px;top:-100px;right:-50px;opacity:0.2;" aria-hidden="true"></div>
+ <div style="font-size:3rem;margin-bottom:var(--s-5);" aria-hidden="true"></div>
+ <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.5rem);font-weight:800;color:white;margin-bottom:var(--s-4);" id="ai-cta-heading">
+ Have a Health Question?
+ </h2>
+ <p style="color:rgba(255,255,255,0.75);font-size:var(--fs-lg);max-width:480px;margin:0 auto var(--s-8);line-height:var(--lh-relaxed);">
+ Ask HealthWise AI get instant, evidence-based answers to all your health and wellness questions, available 24/7.
+ </p>
+ <a href="assistant.html" class="btn btn-glass magnetic" style="font-size:var(--fs-base);padding:15px 36px;" aria-label="Open AI Health Assistant">
+ Chat with AI Now 
+ </a>
+ </div>
+ </div>
+</section>
+
+<!-- =========================================================
+ FOOTER
+ ========================================================= -->
+<footer id="site-footer" role="contentinfo">
+ <div class="footer-glow" aria-hidden="true"></div>
+ <div class="container">
+ <div class="footer-grid">
+ <!-- Brand -->
+ <div>
+ <a href="index.html" class="nav-logo" aria-label="HealthWise Home">
+ <div class="nav-logo-mark" aria-hidden="true">HS</div>
+ <div class="nav-logo-copy">
+ <span class="nav-logo-name" style="color:var(--white);">HealthWise</span>
+ <span class="nav-logo-tag" style="color:var(--green-300);">Healthy Habits Begin With You</span>
+ </div>
+ </a>
+ <p class="footer-brand-desc">Your trusted health education platform. Evidence-based wellness guidance for students and communities.</p>
+ <div class="footer-socials">
+ <a href="#" class="social-link" aria-label="Follow on Instagram"></a>
+ <a href="#" class="social-link" aria-label="Follow on YouTube"></a>
+ <a href="#" class="social-link" aria-label="Follow on Twitter"></a>
+ <a href="#" class="social-link" aria-label="Follow on Facebook"></a>
+ </div>
+ </div>
+
+ <!-- Pages -->
+ <div>
+ <div class="footer-col-title">Pages</div>
+ <div class="footer-links">
+ <a href="index.html" class="footer-link">Home</a>
+ <a href="about.html" class="footer-link">Why Health</a>
+ <a href="health.html" class="footer-link">Health Guide</a>
+ <a href="assistant.html" class="footer-link">AI Assistant</a>
+ </div>
+ </div>
+
+ <!-- Topics -->
+ <div>
+ <div class="footer-col-title">Health Topics</div>
+ <div class="footer-links">
+ <a href="health.html#hygiene" class="footer-link">Personal Hygiene</a>
+ <a href="health.html#nutrition" class="footer-link">Nutrition & Diet</a>
+ <a href="health.html#mental" class="footer-link">Mental Wellness</a>
+ <a href="health.html#exercise" class="footer-link">Exercise</a>
+ <a href="health.html#vaccine" class="footer-link">Vaccination</a>
+ <a href="health.html#sleep" class="footer-link">Sleep Health</a>
+ </div>
+ </div>
+
+ <!-- Resources -->
+ <div>
+ <div class="footer-col-title">Resources</div>
+ <div class="footer-links">
+ <a href="https://www.who.int" target="_blank" rel="noopener" class="footer-link">WHO Health</a>
+ <a href="https://www.unicef.org" target="_blank" rel="noopener" class="footer-link">UNICEF</a>
+ <a href="#emergency" class="footer-link">Emergency Contacts</a>
+ <a href="#faq" class="footer-link">FAQs</a>
+ <a href="assistant.html" class="footer-link">Ask AI</a>
+ </div>
+ </div>
+ </div>
+
+ <div class="footer-bottom">
+ <p class="footer-copy"> 2024 HealthWise. All content is for educational purposes only. Not a substitute for professional medical advice.</p>
+ <div class="footer-legal">
+ <a href="#">Privacy</a>
+ <a href="#">Terms</a>
+ <a href="#">Disclaimer</a>
+ </div>
+ </div>
+ </div>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-top" aria-label="Back to top of page">Top</button>
+
+<script src="js/icons.js"></script><script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
