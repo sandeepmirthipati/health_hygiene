@@ -206,6 +206,7 @@ function initAssistant() {
   $('#sidebar-toggle')?.addEventListener('click', () => { const side = $('#assistant-sidebar'); const open = side.classList.toggle('open'); $('#sidebar-toggle').setAttribute('aria-expanded', String(open)); });
   $('#attach-btn')?.addEventListener('click', () => window.showToast?.('Attachment UI ready for future health document support'));
   $('#emoji-btn')?.addEventListener('click', () => { const input = $('#chat-input'); input.value += ' '; input.focus(); });
+  $('#voice-btn')?.addEventListener('click', () => window.showToast?.('Voice input UI ready for future support'));
   $('#settings-btn')?.addEventListener('click', () => window.showToast?.('AI settings are configured in js/assistant.js'));
   $('#settings-top-btn')?.addEventListener('click', () => window.showToast?.('AI settings are configured in js/assistant.js'));
 }

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey & Research Portal - HealthWise</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- Bootstrap 5 Grid & Utilities -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/animations.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%234E7A52'/><text y='.8em' font-size='42' x='16' fill='white'>HS</text></svg>"/>
+</head>
+<body class="guest-mode">
+
+<!-- NAV -->
+<nav id="nav" class="glass" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="HealthWise Home">
+      <div class="nav-logo-mark" aria-hidden="true">HS</div>
+      <div class="nav-logo-copy">
+        <span class="nav-logo-name">HealthWise</span>
+        <span class="nav-logo-tag">Healthy Habits Begin With You</span>
+      </div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">Why Health</a></li>
+      <li><a href="health.html" class="nav-link">Health Guide</a></li>
+      <li><a href="assistant.html" class="nav-link">AI Assistant</a></li>
+      <li><a href="survey.html" class="nav-link active" aria-current="page">Survey & Research</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-icon-btn" data-theme-toggle aria-label="Toggle dark mode" title="Toggle dark/light mode"></button>
+      <a href="#" id="nav-admin-login-btn" class="nav-cta-btn magnetic btn-magnetic guest-view-only" style="background: var(--g-accent); box-shadow: var(--shadow-glow);">Admin Login</a>
+      <a href="#" id="nav-admin-logout-btn" class="nav-cta-btn magnetic btn-magnetic admin-view-only" style="background: var(--danger); box-shadow: var(--shadow-glow);">Logout</a>
+      <a href="assistant.html" class="nav-cta-btn magnetic btn-magnetic">AI Assistant</a>
+      <button class="nav-ham" id="nav-ham" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="nav-drawer" id="nav-drawer" role="dialog" aria-label="Navigation menu">
+  <div class="drawer-links">
+    <a href="index.html" class="drawer-link">Home</a>
+    <a href="about.html" class="drawer-link">Why Health</a>
+    <a href="health.html" class="drawer-link">Health Guide</a>
+    <a href="assistant.html" class="drawer-link">AI Assistant</a>
+    <a href="survey.html" class="drawer-link" aria-current="page">Survey & Research</a>
+  </div>
+  <a href="#" id="drawer-admin-login-btn" class="btn btn-accent mb-2 guest-view-only" style="display:flex;align-items:center;gap:8px;justify-content:center;">Admin Login</a>
+  <a href="#" id="drawer-admin-logout-btn" class="btn btn-danger mb-2 admin-view-only" style="display:flex;align-items:center;gap:8px;justify-content:center;">Logout</a>
+  <a href="assistant.html" class="btn btn-solid" style="display:flex;align-items:center;gap:8px;justify-content:center;">Chat with AI Health Assistant</a>
+</div>
+
+<!-- =========================================================
+     SECTION 1: HERO
+========================================================= -->
+<section id="hero" style="min-height: 70vh; padding-top: calc(var(--nav-h) + 4rem);" aria-label="Survey Hero">
+  <div class="hero-grid-overlay" aria-hidden="true"></div>
+  <div class="hero-particles" aria-hidden="true"></div>
+  <div class="container text-center" style="position: relative; z-index: 2;">
+    <div class="badge mb-4" data-aos="fade-down"><span class="badge-dot"></span>Health & Hygiene Awareness</div>
+    <h1 class="display-1 mb-3 text-white" data-aos="fade-up">Survey & Research <span class="hero-accent">Portal</span></h1>
+    <p class="h3 text-white mb-4" data-aos="fade-up" data-aos-delay="100">Study on Health and Hygiene Awareness Among Students and Local Communities</p>
+    <p class="section-desc text-white opacity-75 mx-auto mb-5" data-aos="fade-up" data-aos-delay="200" style="max-width: 800px;">
+      Our team conducted eight field visits across schools, villages, health centres, government offices, residential communities and commercial establishments to study health, hygiene and sanitation awareness.
+    </p>
+    <div class="d-flex flex-wrap justify-content-center gap-3" data-aos="fade-up" data-aos-delay="300">
+      <a href="#visits" class="btn btn-accent magnetic">Explore Visits</a>
+      <a href="#analytics" class="btn btn-solid magnetic">Survey Analytics</a>
+      <a href="#findings" class="btn btn-outline magnetic bg-white">Research Findings</a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 11: SEARCH (Global)
+========================================================= -->
+<section class="section pt-0" style="margin-top: -30px; position: relative; z-index: 10;">
+  <div class="container">
+    <div class="search-bar-wrap" data-aos="fade-up" data-aos-delay="400">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="global-search" placeholder="Search by Visit, Village, Date, Location, Survey Number...">
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 2: PROJECT STATISTICS
+========================================================= -->
+<section class="section pt-4" id="stats">
+  <div class="container">
+    <div class="row g-4 text-center justify-content-center">
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="card glass-card survey-stat-card tilt-card h-100">
+          <div class="survey-stat-value counter" data-target="8">0</div>
+          <div class="survey-stat-label">Total Visits</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+        <div class="card glass-card survey-stat-card tilt-card h-100">
+          <div class="survey-stat-value counter" data-target="8">0</div>
+          <div class="survey-stat-label">Locations</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="card glass-card survey-stat-card tilt-card h-100">
+          <div class="survey-stat-value counter" data-target="7">0</div>
+          <div class="survey-stat-label">Team Members</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+        <div class="card glass-card survey-stat-card tilt-card h-100">
+          <div class="survey-stat-value counter" data-target="80">0</div>
+          <div class="survey-stat-label">Forms Collected</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+        <div class="card glass-card survey-stat-card tilt-card h-100">
+          <div class="survey-stat-value counter" data-target="30">0</div>
+          <div class="survey-stat-label">Residents</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="350">
+        <div class="card glass-card survey-stat-card tilt-card h-100">
+          <div class="survey-stat-value counter" data-target="80">0</div>
+          <div class="survey-stat-label">Students</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+        <div class="card glass-card survey-stat-card tilt-card h-100">
+          <div class="survey-stat-value counter" data-target="2">0</div>
+          <div class="survey-stat-label">Health Centres</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="450">
+        <div class="card glass-card survey-stat-card tilt-card h-100">
+          <div class="survey-stat-value counter" data-target="1">0</div>
+          <div class="survey-stat-label">Schools</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+        <div class="card glass-card survey-stat-card tilt-card h-100">
+          <div class="survey-stat-value counter" data-target="1">0</div>
+          <div class="survey-stat-label">Gov Offices</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="550">
+        <div class="card glass-card survey-stat-card tilt-card h-100">
+          <div class="survey-stat-value counter" data-target="4">0</div>
+          <div class="survey-stat-label">Communities</div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4" data-aos="fade-in" data-aos-delay="600">
+      <span class="badge bg-white shadow-sm p-3 rounded-pill text-dark border"><i class="fa-regular fa-calendar text-primary me-2"></i> Project Duration: 23 June 2026 to 02 July 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 12: ADMIN DASHBOARD (Hidden by default)
+========================================================= -->
+<section class="section bg-light admin-view-only" id="admin-dashboard">
+  <div class="container">
+    <div class="section-head">
+      <div class="badge"><span class="badge-dot"></span>Management</div>
+      <h2 class="display-2">Admin <span class="gradient-text">Dashboard</span></h2>
+    </div>
+    <div class="admin-dashboard-panel">
+      <div class="d-flex flex-wrap gap-3 mb-4">
+        <button class="btn btn-solid"><i class="fa-solid fa-cloud-arrow-up"></i> Upload Images</button>
+        <button class="btn btn-accent"><i class="fa-solid fa-plus"></i> Add Survey</button>
+        <button class="btn btn-outline"><i class="fa-solid fa-pen-to-square"></i> Edit Data</button>
+        <button class="btn btn-ghost text-danger"><i class="fa-solid fa-trash"></i> Delete Survey</button>
+      </div>
+      <p class="text-muted"><i class="fa-solid fa-circle-info me-2"></i> Note: This is a frontend presentation environment. Changes made here will reset upon page reload.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 3: FIELD VISITS
+========================================================= -->
+<section class="section" id="visits">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="badge"><span class="badge-dot"></span>On-Ground Research</div>
+      <h2 class="display-2">Field Visits & <span class="gradient-text">Survey Locations</span></h2>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4" id="visits-grid">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 4: SURVEY FORMS GALLERY
+========================================================= -->
+<section class="section bg-light" id="forms-gallery">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="badge"><span class="badge-dot"></span>Raw Data</div>
+      <h2 class="display-2">Survey <span class="gradient-text">Forms Gallery</span></h2>
+    </div>
+    
+    <div class="search-filter-tags mb-4" data-aos="fade-up">
+      <button class="filter-tag active" data-filter="all">All Villages</button>
+      <button class="filter-tag" data-filter="Jonnada">Jonnada</button>
+      <button class="filter-tag" data-filter="Santha Pet">Santha Pet</button>
+      <button class="filter-tag" data-filter="Boddavalasa">Boddavalasa</button>
+      <button class="filter-tag" data-filter="Chelavuru">Chelavuru</button>
+      <button class="filter-tag" data-filter="Regubilli">Regubilli</button>
+    </div>                                
+
+    <div class="masonry-grid" id="survey-masonry">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 5: SURVEY QUESTIONS
+========================================================= -->
+<section class="section" id="questions">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="badge"><span class="badge-dot"></span>Question Breakdown</div>
+      <h2 class="display-2">Survey <span class="gradient-text">Questions</span></h2>
+    </div>
+    <div class="row g-4" id="questions-grid">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 6: ANALYTICS DASHBOARD
+========================================================= -->
+<section class="section bg-light" id="analytics">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="badge"><span class="badge-dot"></span>Insights</div>
+      <h2 class="display-2">Analytics <span class="gradient-text">Dashboard</span></h2>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-lg-4" data-aos="fade-up"><div class="card chart-card"><h3 class="h4 text-center">Gender Distribution (Pie)</h3><div class="chart-container"><canvas id="chartGenderPie"></canvas></div></div></div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100"><div class="card chart-card"><h3 class="h4 text-center">Health Awareness (Doughnut)</h3><div class="chart-container"><canvas id="chartAwareness"></canvas></div></div></div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200"><div class="card chart-card"><h3 class="h4 text-center">Hygiene Score (Radar)</h3><div class="chart-container"><canvas id="chartRadar"></canvas></div></div></div>
+    </div>
+    <div class="row g-4 mb-5">
+      <div class="col-lg-6" data-aos="fade-up"><div class="card chart-card"><h3 class="h4 text-center">Village-wise Responses (Bar)</h3><div class="chart-container"><canvas id="chartVillageBar"></canvas></div></div></div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100"><div class="card chart-card"><h3 class="h4 text-center">Daily Survey Progress (Line)</h3><div class="chart-container"><canvas id="chartLine"></canvas></div></div></div>
+    </div>
+    <div class="row g-4 mb-5">
+      <div class="col-lg-6" data-aos="fade-up"><div class="card chart-card"><h3 class="h4 text-center">Waste Management (Horizontal Bar)</h3><div class="chart-container"><canvas id="chartHBar"></canvas></div></div></div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100"><div class="card chart-card"><h3 class="h4 text-center">Water Source (Stacked Bar)</h3><div class="chart-container"><canvas id="chartStacked"></canvas></div></div></div>
+    </div>
+
+    <h3 class="h3 mb-4 mt-5 text-center" data-aos="fade-up">Overall Progress Insights</h3>
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in"><div class="card glass-card p-3 h-100"><strong>Hand Washing</strong><div class="h3 text-success mt-2">78%</div></div></div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="100"><div class="card glass-card p-3 h-100"><strong>Clean Water</strong><div class="h3 text-primary mt-2">65%</div></div></div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="200"><div class="card glass-card p-3 h-100"><strong>Toilets</strong><div class="h3 text-success mt-2">85%</div></div></div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="300"><div class="card glass-card p-3 h-100"><strong>Waste Disposal</strong><div class="h3 text-danger mt-2">40%</div></div></div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="400"><div class="card glass-card p-3 h-100"><strong>Disease Awareness</strong><div class="h3 text-success mt-2">72%</div></div></div>
+      <div class="col-6 col-md-4 col-lg-2" data-aos="zoom-in" data-aos-delay="500"><div class="card glass-card p-3 h-100"><strong>Nutrition</strong><div class="h3 text-warning mt-2">55%</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 7: RESEARCH FINDINGS
+========================================================= -->
+<section class="section" id="findings">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="badge"><span class="badge-dot"></span>Conclusions</div>
+      <h2 class="display-2">Research <span class="gradient-text">Findings</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4" data-aos="fade-up">
+        <div class="card p-4 h-100 border-start border-4 border-warning">
+          <h4 class="h4 text-warning"><i class="fa-solid fa-eye me-2"></i> Observations</h4>
+          <p class="mt-3">Communities rely heavily on untreated groundwater. Waste is often burned or dumped openly. Basic hygiene awareness is present but inconsistent in practice.</p>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card p-4 h-100 border-start border-4 border-danger">
+          <h4 class="h4 text-danger"><i class="fa-solid fa-triangle-exclamation me-2"></i> Major Problems</h4>
+          <p class="mt-3">Lack of systematic waste collection. High risk of water-borne diseases during monsoons. Inadequate sanitation in some public areas.</p>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card p-4 h-100 border-start border-4 border-success">
+          <h4 class="h4 text-success"><i class="fa-solid fa-lightbulb me-2"></i> Recommendations</h4>
+          <p class="mt-3">Establish community waste bins. Conduct monthly clean drinking water camps. Provide school-level hygiene kits.</p>
+        </div>
+      </div>
+      <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+        <div class="card p-4 text-center bg-primary text-white" style="background: var(--g-accent);">
+          <h4 class="h3 mb-3">Overall Health Score: 68%</h4>
+          <p class="m-0 opacity-75">While awareness is growing, infrastructural gaps need addressing for full community wellbeing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 8: TIMELINE
+========================================================= -->
+<section class="section bg-light" id="timeline">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="badge"><span class="badge-dot"></span>Journey</div>
+      <h2 class="display-2">Field Visit <span class="gradient-text">Timeline</span></h2>
+    </div>
+    <div class="timeline-vertical" id="visits-timeline">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 9: PHOTO GALLERY
+========================================================= -->
+<section class="section" id="photos">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <div class="badge"><span class="badge-dot"></span>Memories</div>
+      <h2 class="display-2">Photo <span class="gradient-text">Gallery</span></h2>
+    </div>
+    <div class="masonry-grid">
+      <div class="masonry-item" data-aos="zoom-in"><img src="images/photo-1.png" alt="Gallery" class="img-fluid rounded cursor-zoom lightbox-trigger" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23e9ecef%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23495057%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dy%3D%22.3em%22%3EPhoto%3C%2Ftext%3E%3C%2Fsvg%3E'"></div>
+      <div class="masonry-item" data-aos="zoom-in" data-aos-delay="100"><img src="images/survey-1 (4).png" alt="Gallery" class="img-fluid rounded cursor-zoom lightbox-trigger" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22600%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23e9ecef%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23495057%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dy%3D%22.3em%22%3EPhoto%3C%2Ftext%3E%3C%2Fsvg%3E'"></div>
+      <div class="masonry-item" data-aos="zoom-in" data-aos-delay="200"><img src="images/survey-1 (5).png" alt="Gallery" class="img-fluid rounded cursor-zoom lightbox-trigger" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23e9ecef%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23495057%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dy%3D%22.3em%22%3EPhoto%3C%2Ftext%3E%3C%2Fsvg%3E'"></div>
+      <div class="masonry-item" data-aos="zoom-in" data-aos-delay="150"><img src="images/survey-2.png" alt="Gallery" class="img-fluid rounded cursor-zoom lightbox-trigger" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23e9ecef%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23495057%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dy%3D%22.3em%22%3EPhoto%3C%2Ftext%3E%3C%2Fsvg%3E'"></div>
+      <div class="masonry-item" data-aos="zoom-in" data-aos-delay="250"><img src="images/survey-3.png" alt="Gallery" class="img-fluid rounded cursor-zoom lightbox-trigger" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23e9ecef%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23495057%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dy%3D%22.3em%22%3EPhoto%3C%2Ftext%3E%3C%2Fsvg%3E'"></div>
+      <div class="masonry-item" data-aos="zoom-in" data-aos-delay="50"><img src="images/photo-1.png" alt="Gallery" class="img-fluid rounded cursor-zoom lightbox-trigger" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22350%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23e9ecef%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20fill%3D%22%23495057%22%20font-size%3D%2220%22%20text-anchor%3D%22middle%22%20dy%3D%22.3em%22%3EPhoto%3C%2Ftext%3E%3C%2Fsvg%3E'"></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 10: DOWNLOADS
+========================================================= -->
+<section class="section bg-light border-top" id="downloads">
+  <div class="container text-center">
+    <h2 class="display-2 mb-5">Export <span class="gradient-text">Reports</span></h2>
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+      <button class="btn btn-solid"><i class="fa-solid fa-file-pdf"></i> Download Final Report</button>
+      <button class="btn btn-accent"><i class="fa-solid fa-file-pdf"></i> Download Survey PDF</button>
+      <button class="btn btn-outline"><i class="fa-solid fa-file-csv"></i> Download CSV</button>
+      <button class="btn btn-outline"><i class="fa-solid fa-file-excel"></i> Download Excel</button>
+      <button class="btn btn-ghost" onclick="window.print()"><i class="fa-solid fa-print"></i> Print Report</button>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     MODALS
+========================================================= -->
+
+<!-- Field Visit Fullscreen Modal -->
+<div class="survey-modal" id="visitModal" aria-hidden="true" style="background: var(--bg-main);">
+  <div class="survey-modal-content" style="max-width: 1200px; height: 95vh; overflow-y: auto;">
+    <div class="survey-modal-header border-bottom">
+      <h3 class="h2 m-0" id="mvTitle">Visit Title</h3>
+      <button class="btn-close-modal" id="closeVisitBtn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="survey-modal-body p-4">
+      <img src="" id="mvImage" class="img-fluid rounded mb-4 w-100 object-fit-cover" style="height: 300px;" alt="Visit Image">
+      <div class="row g-4 mb-4">
+        <div class="col-md-6">
+          <p><strong><i class="fa-regular fa-calendar me-2"></i> Date:</strong> <span id="mvDate"></span></p>
+          <p><strong><i class="fa-solid fa-location-dot me-2"></i> Location:</strong> <span id="mvLocation"></span></p>
+          <p><strong><i class="fa-solid fa-user-tie me-2"></i> Mentor:</strong> <span id="mvMentor"></span></p>
+        </div>
+        <div class="col-md-6">
+          <p><strong><i class="fa-solid fa-users me-2"></i> Team Strength:</strong> <span id="mvTeam"></span></p>
+          <p><strong><i class="fa-solid fa-check me-2"></i> Present:</strong> <span id="mvPresent"></span></p>
+          <p><strong><i class="fa-solid fa-xmark me-2"></i> Absent:</strong> <span id="mvAbsent"></span></p>
+        </div>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-3 h-100 bg-light">
+            <h4 class="h4">Activities Done</h4>
+            <p id="mvActivities"></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3 h-100 bg-light">
+            <h4 class="h4">Problems Identified</h4>
+            <p id="mvProblems"></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3 h-100 bg-light">
+            <h4 class="h4">Ideas/Suggestions</h4>
+            <p id="mvIdeas"></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3 h-100 bg-light">
+            <h4 class="h4">Observations</h4>
+            <p id="mvObservations"></p>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card p-4 bg-light border-primary border-start border-4">
+            <h4 class="h4">Key Learnings & Conclusion</h4>
+            <p id="mvLearnings"></p>
+            <hr>
+            <p class="m-0" id="mvConclusion"></p>
+          </div>
+        </div>
+      </div>
+      
+      <h4 class="h3 mt-5 mb-4">Visit Gallery</h4>
+      <div class="masonry-grid" id="mvGallery">
+        <!-- Injected images -->
+      </div>
+    </div>
+    <div class="survey-modal-header border-top d-flex justify-content-between p-4 bg-light">
+      <button class="btn btn-outline" id="mvPrevBtn"><i class="fa-solid fa-arrow-left me-2"></i> Previous Visit</button>
+      <button class="btn btn-accent" id="mvNextBtn">Next Visit <i class="fa-solid fa-arrow-right ms-2"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox Overlay -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+  <img src="" class="lightbox-img" id="lightboxImg" alt="Fullscreen">
+</div>
+
+<!-- Admin Login Modal -->
+<div class="admin-login-modal" id="adminLoginModal">
+  <div class="login-card">
+    <button class="lightbox-close" id="loginCloseBtn" style="color: var(--text-main);"><i class="fa-solid fa-xmark"></i></button>
+    <div class="text-center mb-4">
+      <div class="nav-logo-mark mx-auto mb-3" style="width:50px;height:50px;font-size:20px;">HS</div>
+      <h3 class="h3">Admin Login</h3>
+    </div>
+    <div class="login-error" id="loginError">Invalid username or password.</div>
+    <input type="text" id="adminUser" class="login-input" placeholder="Username (admin)">
+    <input type="password" id="adminPass" class="login-input" placeholder="Password (admin123)">
+    <div class="d-flex justify-content-between align-items-center mb-4" style="font-size: 0.85rem;">
+      <label><input type="checkbox" class="me-1"> Remember Me</label>
+      <a href="#" class="text-primary">Forgot Password?</a>
+    </div>
+    <button class="btn btn-accent w-100" id="doLoginBtn">Login Securely</button>
+  </div>
+</div>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+<footer id="site-footer" role="contentinfo">
+  <div class="footer-glow" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="nav-logo" aria-label="HealthWise Home">
+          <div class="nav-logo-mark" aria-hidden="true">HS</div>
+          <div class="nav-logo-copy">
+            <span class="nav-logo-name" style="color:var(--white);">HealthWise</span>
+            <span class="nav-logo-tag" style="color:var(--green-300);">Healthy Habits Begin With You</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">Your trusted health education platform. Evidence-based wellness guidance for students and communities.</p>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Pages</div>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">Why Health</a>
+          <a href="health.html" class="footer-link">Health Guide</a>
+          <a href="assistant.html" class="footer-link">AI Assistant</a>
+          <a href="survey.html" class="footer-link">Survey & Research</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <div class="footer-links">
+          <a href="#" class="footer-link" onclick="document.getElementById('adminLoginModal').classList.add('active');return false;">Admin Portal</a>
+          <a href="https://www.who.int" target="_blank" rel="noopener" class="footer-link">WHO Health</a>
+          <a href="https://www.unicef.org" target="_blank" rel="noopener" class="footer-link">UNICEF</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 HealthWise CSP. All content is for educational purposes only.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/icons.js"></script>
+<script src="js/main.js"></script>
+<script src="js/survey.js"></script>
+</body>
+</html>
+
